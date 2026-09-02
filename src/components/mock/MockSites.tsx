@@ -55,10 +55,10 @@ export function SneakerSite() {
           ["oklch(0.6 0.19 292)", "oklch(0.4 0.14 260)"],
           ["oklch(0.55 0.16 200)", "oklch(0.35 0.1 250)"],
           ["oklch(0.6 0.16 30)", "oklch(0.4 0.12 350)"],
-        ].map(([a, b], i) => (
+        ].map((pair, i) => (
           <div key={i} className="overflow-hidden rounded-xl border border-border/60 bg-surface">
             <div className="h-12 sm:h-16">
-              <Swatch from={a} to={b} />
+              <Swatch from={pair[0]!} to={pair[1]!} />
             </div>
             <div className="space-y-1 p-2">
               <p className="text-[9px] font-medium text-foreground">Runner 0{i + 1}</p>
@@ -151,9 +151,9 @@ export function PortfolioSite() {
             ["oklch(0.45 0.1 165)", "oklch(0.28 0.06 220)"],
             ["oklch(0.5 0.14 30)", "oklch(0.3 0.08 320)"],
             ["oklch(0.42 0.09 250)", "oklch(0.25 0.05 275)"],
-          ].map(([a, b], i) => (
+          ].map((pair, i) => (
             <div key={i} className="h-14 overflow-hidden rounded-xl">
-              <Swatch from={a} to={b} />
+              <Swatch from={pair[0]!} to={pair[1]!} />
             </div>
           ))}
         </div>

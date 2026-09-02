@@ -31,7 +31,7 @@ export function Logo({
 }) {
   return (
     <span className={cn("inline-flex items-center gap-2.5", className)}>
-      <LogoMark className={compact ? "size-7 rounded-lg" : undefined} />
+      <LogoMark className={compact ? "size-7 rounded-lg" : ""} />
       {showName && (
         <span
           className={cn(
