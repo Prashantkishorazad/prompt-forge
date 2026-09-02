@@ -13,7 +13,6 @@ import { Pricing } from "@/components/landing/Pricing";
 import { FinalCTA } from "@/components/landing/FinalCTA";
 import { Footer } from "@/components/landing/Footer";
 import { BuilderWorkspace } from "@/components/builder/BuilderWorkspace";
-import { SectionHeading } from "@/components/landing/SectionHeading";
 import { site, type PreviewKind } from "@/lib/site";
 
 const title = `${site.name} — Build complete applications with AI`;
