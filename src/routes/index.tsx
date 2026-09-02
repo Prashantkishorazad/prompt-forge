@@ -126,9 +126,6 @@ function Index() {
         )}
       </AnimatePresence>
 
-      <div className="sr-only">
-        <SectionHeading eyebrow={site.name} title={site.tagline} />
-      </div>
     </div>
   );
 }
